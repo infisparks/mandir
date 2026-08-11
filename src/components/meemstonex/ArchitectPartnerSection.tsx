@@ -50,7 +50,7 @@ export function ArchitectPartnerSection({ onBookClick }: ArchitectPartnerSection
                 <div>
                   <h4 className="font-serif font-bold text-sm text-[#F0DB8A]">Direct Quarry Stone Sourcing</h4>
                   <p className="text-xs text-[#CEBEA3]">
-                    Pure Makrana, Italian Onyx, Sandstone, and semi-precious lapis/mother-of-pearl inlays.
+                    Pure Makrana, Vietnam Onyx, Sandstone, and semi-precious lapis/mother-of-pearl inlays.
                   </p>
                 </div>
               </div>

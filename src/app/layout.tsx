@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     "Turnkey custom marble mandirs designed for your home — ₹1 Lakh+ projects with 28+ years & 3 generations of stone craftsmanship.",
   keywords:
-    "custom marble mandir, pooja room design, makrana marble mandir, italian marble mandir, temple architecture, sacred spaces",
+    "custom marble mandir, pooja room design, makrana marble mandir, vietnam marble mandir, temple architecture, sacred spaces",
   openGraph: {
     title: "Meemstonex | Custom Marble Mandirs & Luxury Sacred Spaces",
     description:

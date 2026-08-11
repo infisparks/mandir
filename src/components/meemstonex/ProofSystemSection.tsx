@@ -9,7 +9,7 @@ export function ProofSystemSection() {
       icon: "fa-certificate",
       title: "100% Certified Pure Natural Stone",
       subtitle: "Raw Quarried Marble Only",
-      desc: "Zero synthetic resin or artificial powder substitutes. We source pure Makrana, Italian Onyx, and Sandstone directly from certified quarries.",
+      desc: "Zero synthetic resin or artificial powder substitutes. We source pure Makrana, Vietnam Onyx, and Sandstone directly from certified quarries.",
     },
     {
       step: "02",

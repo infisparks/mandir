@@ -18,8 +18,8 @@ export function CraftsmanshipSection({ onBookClick }: CraftsmanshipSectionProps)
         "Hand-carved white marble structure with intricate lotus pillars, backlit floral inlay backdrop, and soft ambient illumination.",
     },
     {
-      id: "italian-onyx",
-      title: "Italian Onyx Pooja Wall Panel",
+      id: "vietnam-onyx",
+      title: "Vietnam Onyx Pooja Wall Panel",
       location: "📍 Mumbai & North India",
       tag: "Backlit Translucent Stone",
       image: "/meemstonex/Proven_Craftsmanship/2.webp",

@@ -84,7 +84,7 @@ export function FeaturedDesignsSection({ onBookClick }: FeaturedDesignsSectionPr
               Exquisite Custom Marble Mandir Designs
             </h2>
             <p className="text-[#E5DAC6] text-[11px] sm:text-sm max-w-2xl mx-auto font-medium leading-tight">
-              Handcrafted in Makrana &amp; Italian Marble — tap any image to preview in full screen.
+              Handcrafted in Makrana &amp; Vietnam Marble — tap any image to preview in full screen.
             </p>
           </div>
 

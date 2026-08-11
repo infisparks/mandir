@@ -122,7 +122,7 @@ export function MeemstonexHero({ onBookClick, onVideoClick }: MeemstonexHeroProp
                     {/* Floating Badge */}
                     <div className="absolute bottom-2 left-2 right-2 flex justify-between items-center text-[10px] sm:text-[11px] font-bold text-[#FAF7F0]">
                       <span className="flex items-center gap-1 bg-[#0B0A08]/80 px-2 py-0.5 rounded border border-[#B8860B]/30">
-                        <i className="fa-solid fa-shield-halved text-[#CCA338]"></i> Makrana &amp; Italian Marble
+                        <i className="fa-solid fa-shield-halved text-[#CCA338]"></i> Makrana &amp; Vietnam Marble
                       </span>
                       <span className="bg-[#B8860B] text-[#FFFEFA] px-1.5 py-0.5 rounded font-black">HD</span>
                     </div>
@@ -189,7 +189,7 @@ export function MeemstonexHero({ onBookClick, onVideoClick }: MeemstonexHeroProp
                       <i className="fa-solid fa-gem text-xs"></i>
                     </div>
                     <div>
-                      <h4 className="font-serif font-bold text-sm text-[#0B0A08]">Pure Makrana &amp; Italian Marble</h4>
+                      <h4 className="font-serif font-bold text-sm text-[#0B0A08]">Pure Makrana &amp; Vietnam Marble</h4>
                       <p className="text-xs text-[#423E34]">Selected virgin marble blocks with flawless finish and vein matching.</p>
                     </div>
                   </div>
@@ -246,7 +246,7 @@ export function MeemstonexHero({ onBookClick, onVideoClick }: MeemstonexHeroProp
                   <i className="fa-solid fa-gem text-xs"></i>
                 </div>
                 <div>
-                  <h4 className="font-serif font-bold text-xs text-[#0B0A08]">Pure Makrana &amp; Italian Marble</h4>
+                  <h4 className="font-serif font-bold text-xs text-[#0B0A08]">Pure Makrana &amp; Vietnam Marble</h4>
                   <p className="text-[11px] text-[#423E34]">Selected virgin marble blocks with flawless finish and vein matching.</p>
                 </div>
               </div>
