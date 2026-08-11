@@ -12,28 +12,33 @@ export function MeemstonexFAQ() {
   const faqs = [
     {
       id: 1,
-      q: "How long does a custom mandir take?",
-      a: "Most custom projects take between 3 to 6 weeks from design sign-off to site delivery, depending on size and intricate carving complexity.",
+      q: "What if I spend ₹2–5 lakh and the final product doesn't match my expectations?",
+      a: "Zero risk. Production only begins after you review and approve 3D CAD models, exact dimensions, carving depth, and physical marble stone samples. Nothing is carved until you give 100% sign-off.",
     },
     {
       id: 2,
-      q: "Do you handle installation across India?",
-      a: "Yes, our dedicated master installation craftsmen deliver and assemble turnkey marble structures in 100+ cities across India as well as overseas.",
+      q: "Can you work directly from my Architect's or Interior Designer's CAD blueprints?",
+      a: "Yes! We specialize in executing architect-provided drawings to exact millimeter precision. We handle stone feasibility, weight distribution, structural joins, and dry-fit assembly.",
     },
     {
       id: 3,
-      q: "Can I see the design before production?",
-      a: "Yes. Production only begins after you review and approve 2D/3D layouts, exact dimensions, and marble samples.",
+      q: "What is your minimum project scope?",
+      a: "We focus exclusively on custom, high-consideration stone projects starting from ₹1 Lakh up to ₹25 Lakh+. We do not sell generic mass-produced factory items.",
     },
     {
       id: 4,
-      q: "What if my dimensions are unusual?",
-      a: "Customization is our core specialization. We engineer structural marble assemblies for tight alcoves, corner walls, or high-ceiling duplexes.",
+      q: "Do you handle turnkey delivery and installation across India & global sites?",
+      a: "Yes. Our master masons deliver and assemble turnkey marble structures in 100+ cities across India as well as international destinations with white-glove site safety.",
     },
     {
       id: 5,
-      q: "Is the price fixed after approval?",
-      a: "Yes. Your project estimate is 100% fixed upon design sign-off, with zero hidden charges.",
+      q: "Do you build sacred institutional projects like Mosques, Mimbars, and Jain Shrines?",
+      a: "Yes. Our 3rd generation craftsmen have extensive expertise in sacred geometry, traditional shastra temple mandirs, mosque mimbars, mehrab archways, and complex Pietra Dura inlay.",
+    },
+    {
+      id: 6,
+      q: "How long does a custom marble mandir or stone project take to complete?",
+      a: "Most custom projects take between 3 to 6 weeks from final design approval to complete site installation, depending on carving complexity.",
     },
   ];
 
@@ -41,7 +46,7 @@ export function MeemstonexFAQ() {
     <section id="faq" className="py-14 sm:py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full max-w-full overflow-hidden">
       <div className="text-center mb-10">
         <span className="text-[#996C05] text-xs font-bold uppercase tracking-widest block mb-1.5">
-          Direct Answers
+          ✦ Direct &amp; Transparent Answers
         </span>
         <h2 className="font-serif text-2xl sm:text-4xl font-extrabold text-[#0B0A08]">
           Frequently Asked Questions

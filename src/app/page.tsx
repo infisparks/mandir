@@ -9,6 +9,9 @@ import { FeaturedDesignsSection } from "@/components/meemstonex/FeaturedDesignsS
 import { ProblemSection } from "@/components/meemstonex/ProblemSection";
 import { ProcessSection } from "@/components/meemstonex/ProcessSection";
 import { CraftsmanshipSection } from "@/components/meemstonex/CraftsmanshipSection";
+import { ArchitectPartnerSection } from "@/components/meemstonex/ArchitectPartnerSection";
+import { SacredArchitectureSection } from "@/components/meemstonex/SacredArchitectureSection";
+import { ProofSystemSection } from "@/components/meemstonex/ProofSystemSection";
 import { DifferentiationSection } from "@/components/meemstonex/DifferentiationSection";
 import { MeemstonexFAQ } from "@/components/meemstonex/MeemstonexFAQ";
 import { MeemstonexFinalCTA } from "@/components/meemstonex/MeemstonexFinalCTA";
@@ -229,7 +232,7 @@ export default function Home({
         {/* Header */}
         <MeemstonexHeader onBookClick={handleOpenBooking} />
 
-        {/* Section 1: Hero Section */}
+        {/* Section 1: Hero Section (Untouched as requested) */}
         <MeemstonexHero onBookClick={handleOpenBooking} onVideoClick={handleOpenVideo} />
 
         {/* Section 1.5: Signature Bespoke Masterpieces Showcase */}
@@ -238,19 +241,28 @@ export default function Home({
         {/* Section 2: Problem Section */}
         <ProblemSection onBookClick={handleOpenBooking} />
 
-        {/* Section 3: Process Section */}
+        {/* Section 3: Process Section (5-Step Mechanism) */}
         <ProcessSection />
 
         {/* Section 4: Proven Craftsmanship Across India */}
         <CraftsmanshipSection onBookClick={handleOpenBooking} />
 
-        {/* Section 5: Differentiation */}
+        {/* Section 5: Architect & Interior Designer Collaboration (ICP #2) */}
+        <ArchitectPartnerSection onBookClick={handleOpenBooking} />
+
+        {/* Section 6: Sacred & Institutional Architecture (ICP #3) */}
+        <SacredArchitectureSection onBookClick={handleOpenBooking} />
+
+        {/* Section 7: Unmatched Trust & Quality Proof System */}
+        <ProofSystemSection />
+
+        {/* Section 8: Differentiation */}
         <DifferentiationSection />
 
-        {/* Section 6: FAQs */}
+        {/* Section 9: FAQs */}
         <MeemstonexFAQ />
 
-        {/* Section 7: Final CTA & Footer */}
+        {/* Section 10: Final CTA & Footer */}
         <MeemstonexFinalCTA onBookClick={handleOpenBooking} />
 
         {/* Mobile Sticky CTA */}
