@@ -188,64 +188,68 @@
     <!-- Root Overflow Prevention Wrapper -->
     <div class="w-full max-w-full overflow-x-hidden relative">
 
-        <!-- Top Announcement Ribbon (Desktop Only to prevent Mobile Header Overlap) -->
-        <div class="hidden md:flex bg-obsidian-950 text-gold-200 py-1.5 px-3 text-center text-xs font-medium tracking-wide border-b border-gold-500/20 justify-center items-center gap-2 w-full max-w-full overflow-hidden min-w-0">
-            <span class="inline-block w-2 h-2 rounded-full bg-gold-400 animate-ping shrink-0"></span>
-            <span class="truncate min-w-0">Select Custom Mandir Projects Across India & Global Locations</span>
-            <span class="text-gold-400 font-bold shrink-0">• Minimum Project ₹1 Lakh+</span>
-        </div>
+        <!-- Header (Transparent Overlay over Hero Video on Mobile, Sticky Cream Header on Desktop) -->
+        <header class="absolute top-0 left-0 right-0 z-40 bg-transparent md:sticky md:top-0 md:bg-cream-50/95 md:backdrop-blur-md transition-all duration-300 w-full max-w-full overflow-hidden">
+            
+            <!-- Top Announcement Ribbon (Kept at top on Mobile & Desktop) -->
+            <div class="bg-obsidian-950/90 text-gold-200 py-1.5 px-3 text-center text-[10px] sm:text-xs font-medium tracking-wide border-b border-gold-500/20 flex justify-center items-center gap-1.5 sm:gap-2 w-full max-w-full overflow-hidden min-w-0">
+                <span class="inline-block w-2 h-2 rounded-full bg-gold-400 animate-ping shrink-0"></span>
+                <span class="truncate min-w-0 flex-1 sm:flex-initial">Select Custom Mandir Projects Across India & Global Locations</span>
+                <span class="hidden md:inline text-gold-400 font-bold shrink-0">• Minimum Project ₹1 Lakh+</span>
+            </div>
 
-        <!-- Main Header (Transparent Overlay on Mobile, Sticky Cream Header on Desktop) -->
-        <header class="absolute top-0 left-0 right-0 z-40 bg-transparent md:sticky md:top-0 md:bg-cream-50/95 md:backdrop-blur-md border-b border-white/10 md:border-gold-500/20 transition-all duration-300 w-full max-w-full overflow-hidden">
-            <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-2 min-w-0">
-                
-                <!-- Brand Logo & Sanskrit Mantra -->
-                <a href="#" class="flex items-center gap-2 sm:gap-3 group min-w-0 flex-1 sm:flex-initial">
-                    <div class="w-9 h-9 sm:w-12 sm:h-12 rounded-full border-2 border-gold-500/40 p-0.5 bg-obsidian-900/60 md:bg-cream-50 flex items-center justify-center shadow-md group-hover:border-gold-500 transition-colors shrink-0">
-                        <!-- Brand Lotus Logo matching user design -->
-                        <svg viewBox="0 0 200 200" class="w-full h-full text-gold-500 fill-current">
-                            <circle cx="100" cy="100" r="94" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4 2"/>
-                            <circle cx="100" cy="100" r="88" fill="none" stroke="currentColor" stroke-width="1.5"/>
-                            <!-- Inner Lotus Motif -->
-                            <path d="M100 35 C115 65 140 85 155 110 C140 125 115 130 100 128 C85 130 60 125 45 110 C60 85 85 65 100 35 Z" fill="none" stroke="currentColor" stroke-width="3"/>
-                            <path d="M100 50 C110 75 125 90 135 115 C115 122 100 122 100 122 C100 122 85 122 65 115 C75 90 90 75 100 50 Z" fill="none" stroke="currentColor" stroke-width="2"/>
-                            <path d="M100 128 L100 138 M95 138 L105 138" stroke="currentColor" stroke-width="2"/>
-                            <!-- Deity Silhouette center -->
-                            <circle cx="100" cy="62" r="5" fill="currentColor"/>
-                            <path d="M100 78 C96 82 92 88 92 95 C92 102 108 102 108 95 C108 88 104 82 100 78 Z" fill="currentColor"/>
-                            <path d="M85 90 Q100 85 115 90 M82 95 Q100 90 118 95 M84 100 Q100 95 116 100" stroke="currentColor" stroke-width="1.5" fill="none"/>
-                        </svg>
-                    </div>
-                    <div class="flex flex-col min-w-0">
-                        <span class="font-serif text-base sm:text-2xl font-black tracking-wider sm:tracking-widest text-cream-50 md:text-obsidian-950 leading-none truncate">MEEMSTONEX</span>
-                        <span class="font-devanagari text-[8px] sm:text-xs text-gold-400 md:text-gold-600 font-bold tracking-normal sm:tracking-wider mt-0.5 truncate">योगः कर्मसु कौशलम् ।</span>
-                    </div>
-                </a>
-
-                <!-- Desktop Nav Items -->
-                <div class="hidden md:flex items-center gap-6 shrink-0">
-                    <a href="#process" class="text-sm font-semibold text-obsidian-800 hover:text-gold-600 transition-colors">Our Process</a>
-                    <a href="#gallery" class="text-sm font-semibold text-obsidian-800 hover:text-gold-600 transition-colors">Projects</a>
-                    <a href="#faq" class="text-sm font-semibold text-obsidian-800 hover:text-gold-600 transition-colors">FAQs</a>
+            <!-- Main Header Bar (100% Transparent on Mobile so Video Shows Through) -->
+            <div class="bg-transparent md:bg-cream-50/95 border-b border-white/10 md:border-gold-500/20 transition-all duration-300 w-full max-w-full overflow-hidden">
+                <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-14 sm:h-20 flex items-center justify-between gap-2 min-w-0">
                     
-                    <a href="#survey" class="gold-gradient-bg shimmer-btn text-cream-50 px-5 py-2.5 rounded-full font-bold text-sm shadow-gold-glow hover:shadow-gold-lg transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
-                        <span>Discuss My Project</span>
-                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    <!-- Brand Logo & Sanskrit Mantra -->
+                    <a href="#" class="flex items-center gap-2 sm:gap-3 group min-w-0 flex-1 sm:flex-initial">
+                        <div class="w-8 h-8 sm:w-12 sm:h-12 rounded-full border-2 border-gold-500/40 p-0.5 bg-obsidian-900/60 md:bg-cream-50 flex items-center justify-center shadow-md group-hover:border-gold-500 transition-colors shrink-0">
+                            <!-- Brand Lotus Logo matching user design -->
+                            <svg viewBox="0 0 200 200" class="w-full h-full text-gold-500 fill-current">
+                                <circle cx="100" cy="100" r="94" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4 2"/>
+                                <circle cx="100" cy="100" r="88" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                                <!-- Inner Lotus Motif -->
+                                <path d="M100 35 C115 65 140 85 155 110 C140 125 115 130 100 128 C85 130 60 125 45 110 C60 85 85 65 100 35 Z" fill="none" stroke="currentColor" stroke-width="3"/>
+                                <path d="M100 50 C110 75 125 90 135 115 C115 122 100 122 100 122 C100 122 85 122 65 115 C75 90 90 75 100 50 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+                                <path d="M100 128 L100 138 M95 138 L105 138" stroke="currentColor" stroke-width="2"/>
+                                <!-- Deity Silhouette center -->
+                                <circle cx="100" cy="62" r="5" fill="currentColor"/>
+                                <path d="M100 78 C96 82 92 88 92 95 C92 102 108 102 108 95 C108 88 104 82 100 78 Z" fill="currentColor"/>
+                                <path d="M85 90 Q100 85 115 90 M82 95 Q100 90 118 95 M84 100 Q100 95 116 100" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                            </svg>
+                        </div>
+                        <div class="flex flex-col min-w-0">
+                            <span class="font-serif text-base sm:text-2xl font-black tracking-wider sm:tracking-widest text-cream-50 md:text-obsidian-950 leading-none truncate">MEEMSTONEX</span>
+                            <span class="font-devanagari text-[8px] sm:text-xs text-gold-400 md:text-gold-600 font-bold tracking-normal sm:tracking-wider mt-0.5 truncate">योगः कर्मसु कौशलम् ।</span>
+                        </div>
                     </a>
-                </div>
 
-                <!-- Mobile Quick Header Button (Compact & Overflow-proof) -->
-                <div class="flex md:hidden items-center shrink-0">
-                    <a href="#survey" class="gold-gradient-bg text-cream-50 text-[11px] px-3 py-1.5 rounded-full font-bold shadow-gold-glow flex items-center gap-1 shrink-0 whitespace-nowrap">
-                        <span>Discuss</span>
-                        <i data-lucide="chevron-right" class="w-3.5 h-3.5 shrink-0"></i>
-                    </a>
+                    <!-- Desktop Nav Items -->
+                    <div class="hidden md:flex items-center gap-6 shrink-0">
+                        <a href="#process" class="text-sm font-semibold text-obsidian-800 hover:text-gold-600 transition-colors">Our Process</a>
+                        <a href="#gallery" class="text-sm font-semibold text-obsidian-800 hover:text-gold-600 transition-colors">Projects</a>
+                        <a href="#faq" class="text-sm font-semibold text-obsidian-800 hover:text-gold-600 transition-colors">FAQs</a>
+                        
+                        <a href="#survey" class="gold-gradient-bg shimmer-btn text-cream-50 px-5 py-2.5 rounded-full font-bold text-sm shadow-gold-glow hover:shadow-gold-lg transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
+                            <span>Discuss My Project</span>
+                            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+
+                    <!-- Mobile Quick Header Button -->
+                    <div class="flex md:hidden items-center shrink-0">
+                        <a href="#survey" class="gold-gradient-bg text-cream-50 text-[11px] px-3 py-1.5 rounded-full font-bold shadow-gold-glow flex items-center gap-1 shrink-0 whitespace-nowrap">
+                            <span>Discuss</span>
+                            <i data-lucide="chevron-right" class="w-3.5 h-3.5 shrink-0"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </header>
 
-    <!-- HERO SECTION (FULL MOBILE SCREEN EDGE-TO-EDGE VIDEO - TRANSPARENT HEADER) -->
-    <section id="heroSection" class="relative min-h-[100dvh] md:min-h-0 pt-20 pb-8 sm:py-10 lg:py-16 overflow-hidden w-full max-w-full bg-obsidian-950 md:bg-transparent flex flex-col justify-center" style="contain: layout paint; isolation: isolate;">
+    <!-- HERO SECTION -->
+    <section id="heroSection" class="relative min-h-[100dvh] md:min-h-0 pt-24 pb-8 sm:py-10 lg:py-16 overflow-hidden w-full max-w-full bg-obsidian-950 md:bg-transparent flex flex-col justify-center" style="contain: layout paint; isolation: isolate;">
         
         <!-- Mobile Background Video Engine (Ultra-Smooth Animated WebP GPU Texture - 0% CPU Decode Lag on Budget Androids) -->
         <img id="mobileHeroAnimWebp" src="hero_mobile_smooth.webp" alt="Meemstonex Craftsmanship Background" class="md:hidden absolute inset-0 w-full h-full object-cover z-0 pointer-events-none opacity-85">
