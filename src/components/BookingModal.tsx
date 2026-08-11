@@ -439,7 +439,7 @@ export function BookingModal({
         campaign: activeCampaign.id,
       });
 
-      const serverUrl = (process.env.NEXT_PUBLIC_WHATSAPP_SERVER_URL || "https://self.infiplus.in").replace(/\/$/, "");
+      const serverUrl = (process.env.NEXT_PUBLIC_WHATSAPP_SERVER_URL || "https://mandir.infiplus.in").replace(/\/$/, "");
       fetch(`${serverUrl}/api/whatsapp/auto-send-welcome`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -488,7 +488,7 @@ export function BookingModal({
       console.error("Async survey save error:", err)
     );
 
-    const serverUrl = (process.env.NEXT_PUBLIC_WHATSAPP_SERVER_URL || "https://self.infiplus.in").replace(/\/$/, "");
+    const serverUrl = (process.env.NEXT_PUBLIC_WHATSAPP_SERVER_URL || "https://mandir.infiplus.in").replace(/\/$/, "");
     const cleanPhone = contactInfo.phone.replace(/\D/g, "");
     const fullPhoneNumber = `${contactInfo.countryCode}${cleanPhone}`;
 
@@ -587,7 +587,7 @@ export function BookingModal({
       console.error("Async meeting save error:", err)
     );
 
-    const serverUrl = (process.env.NEXT_PUBLIC_WHATSAPP_SERVER_URL || "https://self.infiplus.in").replace(/\/$/, "");
+    const serverUrl = (process.env.NEXT_PUBLIC_WHATSAPP_SERVER_URL || "https://mandir.infiplus.in").replace(/\/$/, "");
     const cleanPhone = contactInfo.phone.replace(/\D/g, "");
     const fullPhoneNumber = `${contactInfo.countryCode}${cleanPhone}`;
 

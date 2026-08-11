@@ -58,7 +58,7 @@ interface WhatsappWorkflowConfig {
   step3Meeting: StepConfig;
 }
 
-const SERVER_URL = (process.env.NEXT_PUBLIC_WHATSAPP_SERVER_URL || "https://self.infiplus.in").replace(/\/$/, "");
+const SERVER_URL = (process.env.NEXT_PUBLIC_WHATSAPP_SERVER_URL || "https://mandir.infiplus.in").replace(/\/$/, "");
 
 export default function WhatsappManagerPage() {
   const router = useRouter();
@@ -477,7 +477,7 @@ export default function WhatsappManagerPage() {
         createdAt: new Date().toISOString(),
       };
 
-      const dbUrl = (process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL || "https://selflance-8e2a8-default-rtdb.firebaseio.com").replace(/\/$/, "");
+      const dbUrl = (process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL || "https://mandir-40825-default-rtdb.asia-southeast1.firebasedatabase.app").replace(/\/$/, "");
 
       // Save to Firebase RTDB
       await fetch(`${dbUrl}/google_meet_integrations/firstoptionagency/${accId}.json`, {
@@ -512,7 +512,7 @@ export default function WhatsappManagerPage() {
   const handleDeleteMeetAccount = async (accId: string) => {
     if (!confirm("Are you sure you want to remove this Google Meet account integration?")) return;
     try {
-      const dbUrl = (process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL || "https://selflance-8e2a8-default-rtdb.firebaseio.com").replace(/\/$/, "");
+      const dbUrl = (process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL || "https://mandir-40825-default-rtdb.asia-southeast1.firebasedatabase.app").replace(/\/$/, "");
       await fetch(`${dbUrl}/google_meet_integrations/firstoptionagency/${accId}.json`, {
         method: "DELETE",
       });

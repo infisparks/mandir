@@ -49,7 +49,7 @@ function getCloudTasksClient() {
  * 
  * @param {Object} params
  * @param {string} params.taskId - Unique Task ID (e.g. "task_919958399157_rule123_1720000000")
- * @param {string} params.url - Target HTTP Webhook URL (e.g. "https://self.infiplus.in/api/whatsapp/execute-task")
+ * @param {string} params.url - Target HTTP Webhook URL (e.g. "https://mandir.infiplus.in/api/whatsapp/execute-task")
  * @param {Object} params.payload - JSON body to pass to the webhook
  * @param {number} params.scheduleTimeSeconds - Execution UNIX timestamp in seconds
  * @returns {Promise<{success: boolean, taskName?: string, error?: string}>}
@@ -171,9 +171,9 @@ async function deleteScheduledHttpTask({ taskId, taskName }) {
 const FIREBASE_DB_URL = (
   process.env.FIREBASE_DATABASE_URL ||
   process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL ||
-  "https://selflance-8e2a8-default-rtdb.firebaseio.com"
+  "https://mandir-40825-default-rtdb.asia-southeast1.firebasedatabase.app"
 ).replace(/\/$/, "");
-const FIREBASE_DB_SECRET = process.env.FIREBASE_DB_SECRET || process.env.FIREBASE_DATABASE_SECRET || "";
+const FIREBASE_DB_SECRET = process.env.FIREBASE_DB_SECRET || process.env.FIREBASE_DATABASE_SECRET || "dVDbwP8bv5r0PGDbHPfXuX7SqvgLelIPsFc1ajGN";
 
 async function firebaseDbRead(path) {
   try {
