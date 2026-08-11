@@ -251,11 +251,19 @@
     <!-- HERO SECTION -->
     <section id="heroSection" class="relative min-h-[100dvh] md:min-h-0 pt-24 pb-8 sm:py-10 lg:py-16 overflow-hidden w-full max-w-full bg-obsidian-950 md:bg-transparent flex flex-col justify-center" style="contain: layout paint; isolation: isolate;">
         
-        <!-- Mobile Background Video Engine (Ultra-Smooth Animated WebP GPU Texture - 0% CPU Decode Lag on Budget Androids) -->
-        <img id="mobileHeroAnimWebp" src="hero_mobile_smooth.webp" alt="Meemstonex Craftsmanship Background" class="md:hidden absolute inset-0 w-full h-full object-cover z-0 pointer-events-none opacity-85">
+        <!-- Mobile Background Video Engine (Crisp 720p HD MP4 + 540p Crystal-Clear Animated WebP Engine) -->
+        <video id="mobileHeroVideo" autoplay loop muted playsinline preload="auto" poster="thumbnail.webp" 
+               class="md:hidden absolute inset-0 w-full h-full object-cover z-0 pointer-events-none opacity-90" 
+               style="transform: translateZ(0); will-change: transform;">
+            <source src="hero.mp4" type="video/mp4">
+            <source src="hero.webm" type="video/webm">
+        </video>
+
+        <!-- Crystal-Clear 540p HD Animated WebP Fallback Engine -->
+        <img id="mobileHeroAnimWebp" src="hero_mobile_hd.webp" alt="Meemstonex Craftsmanship Background" class="md:hidden absolute inset-0 w-full h-full object-cover z-0 pointer-events-none opacity-90 hidden">
 
         <!-- Dark Contrast Overlay for Text Legibility -->
-        <div class="md:hidden absolute inset-0 bg-gradient-to-b from-obsidian-950/80 via-obsidian-950/55 to-obsidian-950/95 z-0 pointer-events-none"></div>
+        <div class="md:hidden absolute inset-0 bg-gradient-to-b from-obsidian-950/75 via-obsidian-950/45 to-obsidian-950/90 z-0 pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full my-auto">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
