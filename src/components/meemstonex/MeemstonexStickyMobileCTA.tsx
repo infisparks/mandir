@@ -1,14 +1,37 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 interface MeemstonexStickyMobileCTAProps {
   onBookClick: () => void;
 }
 
 export function MeemstonexStickyMobileCTA({ onBookClick }: MeemstonexStickyMobileCTAProps) {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Show sticky CTA once user scrolls past 380px (past top hero section)
+      if (window.scrollY > 380) {
+        setIsVisible(true);
+      } else {
+        setIsVisible(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll(); // Initial check on mount
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <div className="fixed bottom-3 left-3 right-3 z-50 md:hidden max-w-md mx-auto">
+    <div
+      className={`fixed bottom-3 left-3 right-3 z-50 md:hidden max-w-md mx-auto transition-all duration-400 ease-out ${
+        isVisible
+          ? "translate-y-0 opacity-100 pointer-events-auto"
+          : "translate-y-20 opacity-0 pointer-events-none"
+      }`}
+    >
       {/* Floating Island Executive Glass Container */}
       <div className="bg-[#0D0B08]/92 backdrop-blur-xl border border-[#D4AF37]/50 rounded-full p-1.5 shadow-[0_15px_45px_rgba(0,0,0,0.9),0_0_35px_rgba(212,175,55,0.25)] flex items-center">
         {/* Single Full-Width Primary Lead Button */}
