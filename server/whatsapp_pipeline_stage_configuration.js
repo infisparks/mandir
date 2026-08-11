@@ -9,9 +9,9 @@ const BASE_URL = (process.env.WHATSAPP_API_URL || "https://evo.infispark.in").re
 const FIREBASE_DB_URL = (
   process.env.FIREBASE_DATABASE_URL ||
   process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL ||
-  "https://mandir-40825-default-rtdb.asia-southeast1.firebasedatabase.app"
+  "https://mandir-40825-default-rtdb.firebaseio.com"
 ).replace(/\/$/, "");
-const FIREBASE_DB_SECRET = process.env.FIREBASE_DB_SECRET || process.env.FIREBASE_DATABASE_SECRET || "dVDbwP8bv5r0PGDbHPfXuX7SqvgLelIPsFc1ajGN";
+const FIREBASE_DB_SECRET = process.env.FIREBASE_DB_SECRET || process.env.FIREBASE_DATABASE_SECRET || "";
 const SERVER_PUBLIC_URL = (process.env.WHATSAPP_SERVER_URL || process.env.PUBLIC_APP_URL || "https://mandir.infiplus.in").replace(/\/$/, "");
 const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET || "valdho_gcp_tasks_sec_2026_x89";
 

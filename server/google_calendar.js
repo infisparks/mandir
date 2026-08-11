@@ -4,10 +4,10 @@ const router = express.Router();
 const FIREBASE_DB_URL = (
   process.env.FIREBASE_DATABASE_URL ||
   process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL ||
-  "https://mandir-40825-default-rtdb.asia-southeast1.firebasedatabase.app"
+  "https://mandir-40825-default-rtdb.firebaseio.com"
 ).replace(/\/$/, "");
 
-const FIREBASE_DB_SECRET = process.env.FIREBASE_DB_SECRET || process.env.FIREBASE_DATABASE_SECRET || "dVDbwP8bv5r0PGDbHPfXuX7SqvgLelIPsFc1ajGN";
+const FIREBASE_DB_SECRET = process.env.FIREBASE_DB_SECRET || process.env.FIREBASE_DATABASE_SECRET || "";
 
 /**
  * Firebase Realtime Database REST API Helper
