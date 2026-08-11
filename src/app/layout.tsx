@@ -10,13 +10,13 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteDomain),
   title: "Meemstonex | Custom Marble Mandirs & Luxury Sacred Spaces",
   description:
-    "Turnkey custom marble mandirs designed for your home — ₹1 Lakh+ projects with 28+ years & 3 generations of stone craftsmanship.",
+    "Turnkey custom marble mandirs designed for your home — Starting from ₹1 Lakh with 28+ years & 3rd generation stone craftsmanship.",
   keywords:
     "custom marble mandir, pooja room design, makrana marble mandir, vietnam marble mandir, temple architecture, sacred spaces",
   openGraph: {
     title: "Meemstonex | Custom Marble Mandirs & Luxury Sacred Spaces",
     description:
-      "Turnkey custom marble mandirs designed for your home — ₹1 Lakh+ projects with 28+ years & 3 generations of stone craftsmanship.",
+      "Turnkey custom marble mandirs designed for your home — Starting from ₹1 Lakh with 28+ years & 3rd generation stone craftsmanship.",
     url: siteDomain,
     siteName: "Meemstonex",
     images: [
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Meemstonex | Custom Marble Mandirs & Luxury Sacred Spaces",
     description:
-      "Turnkey custom marble mandirs designed for your home — ₹1 Lakh+ projects with 28+ years & 3 generations of stone craftsmanship.",
+      "Turnkey custom marble mandirs designed for your home — Starting from ₹1 Lakh with 28+ years & 3rd generation stone craftsmanship.",
     images: [ogImageUrl],
   },
 };
@@ -57,7 +57,7 @@ export default function RootLayout({
         />
         <meta
           property="og:description"
-          content="Turnkey custom marble mandirs designed for your home — ₹1 Lakh+ projects with 28+ years & 3 generations of stone craftsmanship."
+          content="Turnkey custom marble mandirs designed for your home — Starting from ₹1 Lakh with 28+ years & 3rd generation stone craftsmanship."
         />
         <meta property="og:image" content={ogImageUrl} />
 

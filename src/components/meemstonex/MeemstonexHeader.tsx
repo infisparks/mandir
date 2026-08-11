@@ -16,7 +16,7 @@ export function MeemstonexHeader({ onBookClick }: MeemstonexHeaderProps) {
           Select Custom Mandir Projects Across India & Global Locations
         </span>
         <span className="hidden md:inline text-[#CCA338] font-bold shrink-0">
-          • Minimum Project ₹1 Lakh+
+          • Starting from ₹1 Lakh
         </span>
       </div>
 
@@ -38,12 +38,12 @@ export function MeemstonexHeader({ onBookClick }: MeemstonexHeaderProps) {
                 <path d="M85 90 Q100 85 115 90 M82 95 Q100 90 118 95 M84 100 Q100 95 116 100" stroke="currentColor" strokeWidth="1.5" fill="none" />
               </svg>
             </div>
-            <div className="flex flex-col min-w-0">
+            <div className="flex flex-col min-w-0 justify-center">
               <span className="font-serif text-base sm:text-2xl font-black tracking-wider sm:tracking-widest text-[#FFFEFA] md:text-[#0B0A08] leading-none truncate">
                 MEEMSTONEX
               </span>
-              <span className="font-devanagari text-[8px] sm:text-xs text-[#CCA338] md:text-[#996C05] font-bold tracking-normal sm:tracking-wider mt-0.5 truncate">
-                योगः कर्मसु कौशलम् ।
+              <span className="text-[9px] sm:text-[11px] font-bold uppercase tracking-[0.14em] sm:tracking-[0.18em] text-[#E5C365] md:text-[#8B5E05] mt-1 truncate">
+                Sacred Marble Architecture
               </span>
             </div>
           </a>

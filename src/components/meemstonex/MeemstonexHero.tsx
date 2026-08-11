@@ -86,7 +86,7 @@ export function MeemstonexHero({ onBookClick, onVideoClick }: MeemstonexHeroProp
 
               {/* Sub-headline */}
               <p className="text-sm sm:text-lg lg:text-xl text-[#F3EDE0] md:text-[#2C2922] font-semibold max-w-2xl mx-auto lg:mx-0 leading-snug">
-                Custom marble mandirs designed for your home — ₹1 Lakh+ projects
+                Custom marble mandirs designed for your home — Starting from ₹1 Lakh
               </p>
 
               {/* VIDEO THUMBNAIL CONTAINER */}
@@ -149,7 +149,7 @@ export function MeemstonexHero({ onBookClick, onVideoClick }: MeemstonexHeroProp
                 {/* Tiny Trust Line */}
                 <div className="flex items-center justify-center gap-1.5 text-[10px] sm:text-xs font-bold text-[#FAF7F0] md:text-[#2C2922] bg-[#12110E]/95 md:bg-[#FAF7F0]/90 px-3 py-1.5 rounded-full border border-[#B8860B]/35 md:border-[#B8860B]/25 shadow-xs max-w-full text-center flex-wrap">
                   <i className="fa-solid fa-award text-[#CCA338] md:text-[#996C05]"></i>
-                  <span>28+ Years • 3 Generations • Custom Craftsmanship</span>
+                  <span>28+ Years • 3rd Generation • Custom Craftsmanship</span>
                 </div>
               </div>
 
@@ -218,9 +218,9 @@ export function MeemstonexHero({ onBookClick, onVideoClick }: MeemstonexHeroProp
                 <div className="pt-2 border-t border-[#B8860B]/20 flex items-center justify-between text-xs font-bold text-[#5C3C00]">
                   <span className="flex items-center gap-1.5">
                     <i className="fa-solid fa-shield-halved text-[#996C05]"></i>
-                    100% Fixed Price Guarantee
+                    100% Transparent Pricing
                   </span>
-                  <span className="text-[#423E34] text-[11px]">Minimum ₹1 Lakh+</span>
+                  <span className="text-[#423E34] text-[11px]">Starting from ₹1 Lakh</span>
                 </div>
               </div>
             </div>
@@ -275,9 +275,9 @@ export function MeemstonexHero({ onBookClick, onVideoClick }: MeemstonexHeroProp
             <div className="pt-2 border-t border-[#B8860B]/20 flex items-center justify-between text-xs font-bold text-[#5C3C00]">
               <span className="flex items-center gap-1">
                 <i className="fa-solid fa-shield-halved text-[#996C05]"></i>
-                Fixed Price Guarantee
+                Transparent Pricing
               </span>
-              <span className="text-[#423E34] text-[10px]">Minimum ₹1 Lakh+</span>
+              <span className="text-[#423E34] text-[10px]">Starting from ₹1 Lakh</span>
             </div>
           </div>
         </div>

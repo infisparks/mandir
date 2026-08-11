@@ -31,8 +31,8 @@ export function MeemstonexFinalCTA({ onBookClick }: MeemstonexFinalCTAProps) {
               <span>Discuss My Mandir Project →</span>
             </button>
 
-            <span className="text-[11px] sm:text-xs text-[#CCA338] font-semibold">
-              ₹1 Lakh+ projects only. We focus on serious custom work.
+            <span className="text-xs text-[#E5C365] font-bold">
+              Starting from ₹1 Lakh projects. We focus on serious custom work.
             </span>
           </div>
         </div>
