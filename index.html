@@ -195,13 +195,13 @@
             <span class="hidden md:inline text-gold-400 font-bold shrink-0">• Minimum Project ₹1 Lakh+</span>
         </div>
 
-        <!-- Main Sticky Header -->
-        <header class="sticky top-0 z-40 bg-obsidian-950/80 md:bg-cream-50/95 backdrop-blur-xl border-b border-gold-500/30 md:border-gold-500/20 transition-all duration-300 shadow-sm w-full max-w-full overflow-hidden">
+        <!-- Main Header (Transparent Overlay on Mobile, Sticky Cream Header on Desktop) -->
+        <header class="absolute top-0 left-0 right-0 z-40 bg-transparent md:sticky md:top-0 md:bg-cream-50/95 md:backdrop-blur-md border-b border-white/10 md:border-gold-500/20 transition-all duration-300 w-full max-w-full overflow-hidden">
             <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-2 min-w-0">
                 
                 <!-- Brand Logo & Sanskrit Mantra -->
                 <a href="#" class="flex items-center gap-2 sm:gap-3 group min-w-0 flex-1 sm:flex-initial">
-                    <div class="w-9 h-9 sm:w-12 sm:h-12 rounded-full border-2 border-gold-500/40 p-0.5 bg-obsidian-900 md:bg-cream-50 flex items-center justify-center shadow-md group-hover:border-gold-500 transition-colors shrink-0">
+                    <div class="w-9 h-9 sm:w-12 sm:h-12 rounded-full border-2 border-gold-500/40 p-0.5 bg-obsidian-900/60 md:bg-cream-50 flex items-center justify-center shadow-md group-hover:border-gold-500 transition-colors shrink-0">
                         <!-- Brand Lotus Logo matching user design -->
                         <svg viewBox="0 0 200 200" class="w-full h-full text-gold-500 fill-current">
                             <circle cx="100" cy="100" r="94" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="4 2"/>
@@ -244,19 +244,22 @@
             </div>
         </header>
 
-    <!-- HERO SECTION (CLEAN MOBILE VIDEO FRAME - ZERO CROPPING & ZERO ANDROID LAG) -->
-    <section class="relative min-h-[calc(100dvh-4rem)] md:min-h-0 py-6 sm:py-10 lg:py-16 overflow-hidden w-full max-w-full bg-obsidian-950 md:bg-transparent flex flex-col justify-center">
+    <!-- HERO SECTION (FULL MOBILE SCREEN EDGE-TO-EDGE VIDEO - TRANSPARENT HEADER) -->
+    <section id="heroSection" class="relative min-h-[100dvh] md:min-h-0 pt-20 pb-8 sm:py-10 lg:py-16 overflow-hidden w-full max-w-full bg-obsidian-950 md:bg-transparent flex flex-col justify-center" style="contain: layout paint; isolation: isolate;">
         
-        <!-- Mobile Background Video (Constrained Baseline 345KB - 100% Full Video Display Without Left/Right Cropping) -->
-        <video autoplay loop muted playsinline preload="auto" poster="thumbnail.webp" 
-               class="md:hidden absolute inset-0 w-full h-full object-contain z-0 pointer-events-none opacity-90" 
+        <!-- Mobile Background Video (Full Edge-to-Edge Cover Without Left/Right Black Bars) -->
+        <video id="mobileHeroVideo" autoplay loop muted playsinline preload="auto" poster="thumbnail.webp" 
+               class="md:hidden absolute inset-0 w-full h-full object-cover z-0 pointer-events-none opacity-85" 
                style="transform: translateZ(0); will-change: transform;">
             <source src="hero.mp4" type="video/mp4">
             <source src="hero.webm" type="video/webm">
         </video>
 
+        <!-- Zero-Lag Animated WebP Fallback Engine for Budget Android Devices -->
+        <img id="mobileHeroAnimWebp" src="hero_anim_fast.webp" alt="Background Animation" class="md:hidden absolute inset-0 w-full h-full object-cover z-0 pointer-events-none opacity-85 hidden">
+
         <!-- Dark Contrast Overlay for Text Legibility -->
-        <div class="md:hidden absolute inset-0 bg-gradient-to-b from-obsidian-950/85 via-obsidian-950/60 to-obsidian-950/95 z-0 pointer-events-none"></div>
+        <div class="md:hidden absolute inset-0 bg-gradient-to-b from-obsidian-950/80 via-obsidian-950/55 to-obsidian-950/95 z-0 pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full my-auto">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
@@ -1201,6 +1204,42 @@
     <script>
         // Initialize Lucide Icons
         lucide.createIcons();
+
+        // Low-End Android Zero-Lag Engine: Viewport Auto-Pause & Fallback
+        document.addEventListener('DOMContentLoaded', () => {
+            const heroSection = document.getElementById('heroSection');
+            const heroVideo = document.getElementById('mobileHeroVideo');
+            const animWebp = document.getElementById('mobileHeroAnimWebp');
+
+            if (heroSection && heroVideo) {
+                // Auto-Pause video when user scrolls past hero section to save 100% CPU/GPU load
+                if ('IntersectionObserver' in window) {
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                heroVideo.play().catch(() => {
+                                    if (animWebp) {
+                                        heroVideo.classList.add('hidden');
+                                        animWebp.classList.remove('hidden');
+                                    }
+                                });
+                            } else {
+                                heroVideo.pause();
+                            }
+                        });
+                    }, { threshold: 0.05 });
+                    observer.observe(heroSection);
+                }
+
+                // If low power mode or video decoding fails, fallback to ultra-smooth Animated WebP
+                heroVideo.addEventListener('error', () => {
+                    if (animWebp) {
+                        heroVideo.classList.add('hidden');
+                        animWebp.classList.remove('hidden');
+                    }
+                });
+            }
+        });
 
         // FAQ Accordion Toggle
         function toggleFaq(id) {
