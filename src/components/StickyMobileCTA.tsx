@@ -53,7 +53,7 @@ export function StickyMobileCTA({ onBookClick }: { onBookClick: () => void }) {
         {/* Right Side: High-Impact Gold Button */}
         <button
           onClick={onBookClick}
-          className="cta-gold-btn shimmer py-2.5 px-3.5 sm:px-5 rounded-xl sm:rounded-full text-slate-950 font-black text-xs sm:text-sm uppercase tracking-wide flex items-center space-x-1.5 shadow-xl hover:scale-105 active:scale-95 transition-all flex-shrink-0"
+          className="gold-btn-luxury shimmer-btn py-2.5 px-4 sm:px-6 rounded-xl sm:rounded-full text-[#1A1207] font-extrabold text-xs sm:text-sm uppercase tracking-wide flex items-center space-x-1.5 shadow-[0_6px_25px_rgba(200,153,39,0.45)] hover:scale-105 active:scale-95 transition-all flex-shrink-0 cursor-pointer"
         >
           <span>BOOK APPOINTMENT</span>
           <i className="fa-solid fa-arrow-right text-xs"></i>

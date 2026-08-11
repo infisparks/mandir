@@ -62,7 +62,7 @@ export function MeemstonexHeader({ onBookClick }: MeemstonexHeaderProps) {
 
             <button
               onClick={onBookClick}
-              className="gold-gradient-bg shimmer-btn text-[#FFFEFA] px-5 py-2.5 rounded-full font-bold text-sm shadow-[0_0_25px_rgba(184,134,11,0.25)] hover:shadow-[0_12px_35px_-10px_rgba(184,134,11,0.45)] transition-all transform hover:-translate-y-0.5 flex items-center gap-2 cursor-pointer"
+              className="gold-btn-luxury shimmer-btn text-[#1A1207] px-6 py-2.5 rounded-full font-extrabold text-sm shadow-[0_6px_25px_rgba(200,153,39,0.45)] hover:shadow-[0_8px_30px_rgba(200,153,39,0.65)] transition-all transform hover:-translate-y-0.5 flex items-center gap-2 cursor-pointer"
             >
               <span>Discuss My Project</span>
               <i className="fa-solid fa-arrow-right text-xs"></i>
@@ -73,7 +73,7 @@ export function MeemstonexHeader({ onBookClick }: MeemstonexHeaderProps) {
           <div className="flex md:hidden items-center shrink-0">
             <button
               onClick={onBookClick}
-              className="gold-gradient-bg text-[#FFFEFA] text-[11px] px-3 py-1.5 rounded-full font-bold shadow-[0_0_25px_rgba(184,134,11,0.25)] flex items-center gap-1 shrink-0 whitespace-nowrap cursor-pointer"
+              className="gold-btn-luxury text-[#1A1207] text-[11px] px-3.5 py-1.5 rounded-full font-black shadow-[0_4px_15px_rgba(200,153,39,0.4)] flex items-center gap-1 shrink-0 whitespace-nowrap cursor-pointer"
             >
               <span>Discuss</span>
               <i className="fa-solid fa-chevron-right text-[10px] shrink-0"></i>

@@ -140,10 +140,10 @@ export function MeemstonexHero({ onBookClick, onVideoClick }: MeemstonexHeroProp
               <div className="pt-1 flex flex-col items-center lg:items-start gap-3">
                 <button
                   onClick={onBookClick}
-                  className="w-full sm:w-auto gold-gradient-bg shimmer-btn text-[#FFFEFA] px-8 py-3.5 sm:py-4 rounded-full font-extrabold text-base sm:text-lg shadow-[0_12px_35px_-10px_rgba(184,134,11,0.45)] hover:brightness-110 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2.5 group cursor-pointer"
+                  className="w-full sm:w-auto gold-btn-luxury shimmer-btn text-[#1A1207] px-8 py-3.5 sm:py-4 rounded-full font-extrabold text-base sm:text-lg shadow-[0_10px_35px_rgba(200,153,39,0.5)] transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2.5 group cursor-pointer"
                 >
                   <span>Discuss My Mandir Project</span>
-                  <i className="fa-solid fa-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
+                  <i className="fa-solid fa-arrow-right text-sm group-hover:translate-x-1 transition-transform text-[#1A1207]"></i>
                 </button>
 
                 {/* Tiny Trust Line */}

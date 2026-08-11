@@ -8,23 +8,43 @@ interface MeemstonexStickyMobileCTAProps {
 
 export function MeemstonexStickyMobileCTA({ onBookClick }: MeemstonexStickyMobileCTAProps) {
   return (
-    <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 p-2.5 bg-[#0B0A08]/95 backdrop-blur-md border-t border-[#B8860B]/30 flex items-center gap-2 shadow-2xl">
-      <a
-        href="https://wa.me/?text=Hi%20Meemstonex,%20I'd%20like%20to%20discuss%20a%20custom%20marble%20mandir%20project."
-        target="_blank"
-        rel="noopener noreferrer"
-        className="w-11 h-11 rounded-full bg-emerald-600 text-white flex items-center justify-center shrink-0 shadow-md"
-        title="WhatsApp Quick Chat"
-      >
-        <i className="fa-brands fa-whatsapp text-lg"></i>
-      </a>
-      <button
-        onClick={onBookClick}
-        className="flex-1 gold-gradient-bg shimmer-btn text-[#FFFEFA] py-2.5 px-4 rounded-full font-bold text-xs shadow-[0_0_25px_rgba(184,134,11,0.25)] flex items-center justify-center gap-1.5 cursor-pointer"
-      >
-        <span>Discuss My Project</span>
-        <i className="fa-solid fa-arrow-right text-xs"></i>
-      </button>
+    <div className="fixed bottom-3 left-3 right-3 z-50 md:hidden max-w-lg mx-auto">
+      {/* Floating Island Executive Glass Container */}
+      <div className="bg-[#0D0B08]/92 backdrop-blur-xl border border-[#D4AF37]/50 rounded-2xl p-2 px-2.5 shadow-[0_15px_45px_rgba(0,0,0,0.9),0_0_35px_rgba(212,175,55,0.2)] flex items-center gap-2.5">
+        {/* Button 1: Direct Phone Call Icon & Button */}
+        <a
+          href="tel:+919958399157"
+          className="emerald-btn-glow relative flex items-center justify-center gap-2 h-12 px-3.5 rounded-xl text-white shadow-lg hover:scale-105 active:scale-95 transition-all duration-200 shrink-0 font-extrabold text-xs tracking-wide group"
+          title="Call Direct"
+        >
+          <div className="relative flex items-center justify-center">
+            <span className="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-emerald-300 opacity-75"></span>
+            <i className="fa-solid fa-phone text-lg text-white drop-shadow-xs relative z-10"></i>
+          </div>
+          <span className="hidden xs:inline-block font-extrabold text-xs text-white drop-shadow-xs">
+            Call Now
+          </span>
+        </a>
+
+        {/* Button 2: Ultra-Luxurious Gold "Discuss My Project" Primary Lead Button */}
+        <button
+          onClick={onBookClick}
+          className="flex-1 h-12 gold-btn-luxury shimmer-btn text-[#1A1207] px-4 rounded-xl font-black shadow-[0_6px_25px_rgba(200,153,39,0.45)] hover:shadow-[0_8px_30px_rgba(200,153,39,0.65)] flex items-center justify-between gap-2 transition-all duration-200 transform hover:-translate-y-0.5 active:scale-95 cursor-pointer group"
+        >
+          <div className="flex flex-col text-left leading-none py-0.5 min-w-0">
+            <span className="text-[9px] uppercase font-black text-[#5C4208] tracking-widest truncate mb-0.5">
+              ✦ Free Consultation
+            </span>
+            <span className="font-extrabold text-xs sm:text-sm text-[#1A1207] tracking-tight truncate">
+              Discuss My Project
+            </span>
+          </div>
+
+          <div className="w-7 h-7 rounded-lg bg-[#1A1207]/15 border border-[#1A1207]/20 flex items-center justify-center text-[#1A1207] shrink-0 group-hover:translate-x-1 transition-transform duration-200 shadow-xs">
+            <i className="fa-solid fa-arrow-right text-xs"></i>
+          </div>
+        </button>
+      </div>
     </div>
   );
 }

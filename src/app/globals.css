@@ -37,11 +37,33 @@
 }
 
 .gold-gradient-bg {
-  background: linear-gradient(135deg, #D8BC5F 0%, #B8860B 60%, #8C6227 100%);
+  background: linear-gradient(135deg, #F0DB8A 0%, #D4AF37 40%, #B8860B 75%, #7A5200 100%);
 }
 
 .gold-gradient-bg-hover:hover {
-  background: linear-gradient(135deg, #E6D494 0%, #CBA135 60%, #A37714 100%);
+  background: linear-gradient(135deg, #FFF1C5 0%, #E5C158 40%, #CBA135 75%, #A37714 100%);
+}
+
+.gold-btn-luxury {
+  background: linear-gradient(135deg, #FFF4CC 0%, #E6C665 25%, #C89927 65%, #8C6212 100%);
+  border: 1px solid rgba(255, 243, 191, 0.7);
+  box-shadow: 0 6px 25px rgba(200, 153, 39, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.7);
+}
+
+.gold-btn-luxury:hover {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F5D77B 25%, #DBA834 65%, #A17218 100%);
+  box-shadow: 0 8px 30px rgba(200, 153, 39, 0.65), inset 0 1px 1px rgba(255, 255, 255, 0.9);
+}
+
+.emerald-btn-glow {
+  background: linear-gradient(135deg, #34D399 0%, #059669 50%, #047857 100%);
+  border: 1px solid rgba(110, 231, 183, 0.5);
+  box-shadow: 0 6px 20px rgba(5, 150, 105, 0.45), inset 0 1px 1px rgba(255, 255, 255, 0.4);
+}
+
+.emerald-btn-glow:hover {
+  background: linear-gradient(135deg, #6EE7B7 0%, #10B981 50%, #059669 100%);
+  box-shadow: 0 8px 25px rgba(5, 150, 105, 0.65), inset 0 1px 1px rgba(255, 255, 255, 0.6);
 }
 
 .marble-pattern {
