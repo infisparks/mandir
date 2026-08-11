@@ -612,7 +612,7 @@ export function BookingModal({
   };
 
   const whatsappMessage = `Hi Meemstonex, I just booked a Custom Mandir Project Consultation.\nName: ${contactInfo.fullName || "User"}\nEmail: ${contactInfo.email || "N/A"}\nPhone: ${contactInfo.countryCode} ${contactInfo.phone || "N/A"}\nBooked Slot: ${formattedBookingDate} at ${selectedTimeSlot || "02:00 PM"}`;
-  const whatsappUrl = `https://wa.me/919958399157?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappUrl = `https://wa.me/919214597877?text=${encodeURIComponent(whatsappMessage)}`;
 
   const qualificationQuestions = activeCampaign.questions;
 
