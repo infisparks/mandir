@@ -202,9 +202,9 @@ export default function Home({
   const handleOpenVideo = useCallback(() => {
     setVideoModal({
       isOpen: true,
-      title: "Meemstonex Craftsmanship Documentary",
+      title: "Meemstonex Marble Mandir Craftsmanship",
       author: "3rd Generation Stone Artisans",
-      embedId: undefined,
+      embedId: "2TOgOB_d1sI",
     });
   }, []);
 

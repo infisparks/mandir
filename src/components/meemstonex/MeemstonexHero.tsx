@@ -114,8 +114,9 @@ export function MeemstonexHero({ onBookClick, onVideoClick }: MeemstonexHeroProp
                       <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full gold-gradient-bg text-[#FFFEFA] flex items-center justify-center shadow-[0_12px_35px_-10px_rgba(184,134,11,0.45)] animate-subtle-pulse group-hover:scale-110 transition-transform">
                         <i className="fa-solid fa-play text-base sm:text-lg ml-0.5"></i>
                       </div>
-                      <span className="mt-2 text-[10px] sm:text-xs font-bold text-[#FFFEFA] bg-[#12110E]/95 px-3 py-1 rounded-full border border-[#CCA338]/40 shadow-md">
-                        Watch How We Craft Masterpieces (2 Mins)
+                      <span className="mt-2 text-[10px] sm:text-xs font-bold text-[#FFFEFA] bg-[#12110E]/95 px-3 py-1 rounded-full border border-[#CCA338]/40 shadow-md flex items-center gap-1.5">
+                        <i className="fa-brands fa-youtube text-red-500 text-xs"></i>
+                        <span>Watch How We Craft Masterpieces (Short Video)</span>
                       </span>
                     </div>
 
