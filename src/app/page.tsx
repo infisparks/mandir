@@ -242,7 +242,7 @@ export default function Home({
         <ProcessSection />
 
         {/* Section 4: Proven Craftsmanship Across India */}
-        <CraftsmanshipSection />
+        <CraftsmanshipSection onBookClick={handleOpenBooking} />
 
         {/* Section 5: Differentiation */}
         <DifferentiationSection />
