@@ -9,31 +9,40 @@ interface CraftsmanshipSectionProps {
 export function CraftsmanshipSection({ onBookClick }: CraftsmanshipSectionProps) {
   const projects = [
     {
-      id: "white-makrana",
-      title: "White Makrana Home Mandir",
-      location: "📍 Delhi NCR",
-      tag: "Pure White Marble Altar",
-      image: "/meemstonex/Proven_Craftsmanship/1.webp",
+      id: "jaipur",
+      title: "Royal Peacock Makrana Mandir",
+      location: "📍 Jaipur, Rajasthan",
+      tag: "Peacock Inlay & Elephant Pillars",
+      image: "/meemstonex/Proven_Craftsmanship/jaipur.png",
       description:
-        "Hand-carved white marble structure with intricate lotus pillars, backlit floral inlay backdrop, and soft ambient illumination.",
+        "Handcrafted Makrana white marble temple adorned with polychrome peacock crest, gemstone peacock inlay backdrop, and elephant pedestal pillars.",
     },
     {
-      id: "vietnam-onyx",
-      title: "Vietnam Onyx Pooja Wall Panel",
-      location: "📍 Mumbai & North India",
-      tag: "Backlit Translucent Stone",
-      image: "/meemstonex/Proven_Craftsmanship/2.webp",
+      id: "barhampur-odisha",
+      title: "Heritage Peacock & Om Shrine",
+      location: "📍 Berhampur, Odisha",
+      tag: "Radiant Om & Peacock Crest",
+      image: "/meemstonex/Proven_Craftsmanship/barhampur_odisha.png",
       description:
-        "Backlit translucent stone wall panels with champagne gold lotus inlay & brass trims for luxury duplexes.",
+        "Majestic white marble shrine featuring an ornate multi-peacock crown, radiant central Om feather motif, multi-level idol brackets, and sacred Om cabinetry.",
     },
     {
-      id: "grand-pavilion",
-      title: "Grand Marble Temple Pavilion",
-      location: "📍 Hyderabad, TS",
-      tag: "Multi-Pillar Architecture",
-      image: "/meemstonex/Proven_Craftsmanship/3.webp",
+      id: "indore",
+      title: "Intricate Mandala & Jali Mandir",
+      location: "📍 Indore, Madhya Pradesh",
+      tag: "Floral Jali & Mandala Carving",
+      image: "/meemstonex/Proven_Craftsmanship/indore.png",
       description:
-        "Multi-pillar sacred shrine with carved dome (Shikhar), brass kalash, and mirror-finish marble floor detailing.",
+        "Exquisite full-carved temple with intricate floral jali arch, central stone mandala medallion, 2-tier deity altar, and elephant base pillars.",
+    },
+    {
+      id: "nagpur",
+      title: "Tiered Shikhar Om Disc Mandir",
+      location: "📍 Nagpur, Maharashtra",
+      tag: "Stepped Shikhar & Floral Lattice",
+      image: "/meemstonex/Proven_Craftsmanship/nagpur.png",
+      description:
+        "Architectural white marble mandir with tiered stepped Shikhar top, deep-relief floral jali arch, handcrafted Om medallion backdrop, and 6-drawer storage.",
     },
   ];
 
@@ -71,13 +80,13 @@ export function CraftsmanshipSection({ onBookClick }: CraftsmanshipSectionProps)
         </div>
       </div>
 
-      {/* Projects Cards Grid (Mobile Slidable Horizontal Carousel, Desktop 3-Col Grid) */}
+      {/* Projects Cards Grid (Mobile Slidable Horizontal Carousel, Desktop 4-Col Grid) */}
       <div className="relative">
-        <div className="flex md:grid md:grid-cols-3 gap-5 sm:gap-6 overflow-x-auto md:overflow-visible snap-x snap-mandatory no-scrollbar pb-4 -mx-4 px-4 sm:mx-0 sm:px-0">
+        <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 overflow-x-auto md:overflow-visible snap-x snap-mandatory no-scrollbar pb-4 -mx-4 px-4 sm:mx-0 sm:px-0">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="w-[85vw] max-w-[340px] md:w-auto shrink-0 snap-center bg-[#12110E] text-[#FFFEFA] rounded-2xl overflow-hidden border border-[#B8860B]/35 shadow-[0_15px_45px_rgba(0,0,0,0.4)] group flex flex-col justify-between transition-all duration-300 hover:border-[#D4AF37]/80 hover:shadow-[0_20px_50px_rgba(184,134,11,0.25)]"
+              className="w-[85vw] max-w-[320px] md:w-auto shrink-0 snap-center bg-[#12110E] text-[#FFFEFA] rounded-2xl overflow-hidden border border-[#B8860B]/35 shadow-[0_15px_45px_rgba(0,0,0,0.4)] group flex flex-col justify-between transition-all duration-300 hover:border-[#D4AF37]/80 hover:shadow-[0_20px_50px_rgba(184,134,11,0.25)]"
             >
               {/* Image Container with Luxury Aspect Ratio */}
               <div className="relative aspect-[3/4] bg-[#0B0A08] overflow-hidden">
@@ -102,7 +111,7 @@ export function CraftsmanshipSection({ onBookClick }: CraftsmanshipSectionProps)
               {/* Card Body */}
               <div className="p-4 sm:p-5 space-y-3 flex-1 flex flex-col justify-between">
                 <div className="space-y-1.5">
-                  <h3 className="font-serif font-bold text-lg text-[#FFFEFA] leading-tight group-hover:text-[#F0DB8A] transition-colors">
+                  <h3 className="font-serif font-bold text-base sm:text-lg text-[#FFFEFA] leading-tight group-hover:text-[#F0DB8A] transition-colors">
                     {project.title}
                   </h3>
                   <p className="text-xs text-[#E5DAC6] leading-relaxed line-clamp-3">

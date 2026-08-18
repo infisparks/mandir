@@ -1396,7 +1396,7 @@ export interface UserData {
   updatedAt?: string;
 }
 
-export const MASTER_ADMIN_UID = "Z6Q2eQIQQuQf1rgk1hdWWxVUdLX2";
+export const MASTER_ADMIN_UID = "GuwV47PaJXbjd00KZjmUbJrmXin1";
 
 const DEFAULT_ROLES: RoleData[] = [
   { id: "role_admin", name: "Admin", description: "Full system administration & role management access", isDeleted: false },
