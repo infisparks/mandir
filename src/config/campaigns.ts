@@ -24,7 +24,7 @@ export const CAMPAIGNS: Record<string, CampaignConfig> = {
     subtitle: "Tell Us About Your Sacred Architecture Vision",
     questions: [
       {
-        num: 2,
+        num: 1,
         question: "What are you looking to create? *",
         field: "project_type",
         options: [
@@ -36,19 +36,7 @@ export const CAMPAIGNS: Record<string, CampaignConfig> = {
         ],
       },
       {
-        num: 3,
-        question: "Project location (City & State) *",
-        field: "location",
-        options: [
-          { label: "Mumbai / MH", key: "A" },
-          { label: "Delhi NCR / North India", key: "B" },
-          { label: "Bangalore / South India", key: "C" },
-          { label: "Hyderabad / TS", key: "D" },
-          { label: "Other City in India / Global", key: "E" },
-        ],
-      },
-      {
-        num: 4,
+        num: 2,
         question: "Approximate project budget *",
         field: "budget",
         options: [
@@ -60,7 +48,7 @@ export const CAMPAIGNS: Record<string, CampaignConfig> = {
         ],
       },
       {
-        num: 5,
+        num: 3,
         question: "When do you want it completed? *",
         field: "timeline",
         options: [
@@ -72,7 +60,7 @@ export const CAMPAIGNS: Record<string, CampaignConfig> = {
         ],
       },
       {
-        num: 6,
+        num: 4,
         question: "Current stage of project *",
         field: "stage",
         options: [
@@ -83,26 +71,6 @@ export const CAMPAIGNS: Record<string, CampaignConfig> = {
           { label: "Ready for installation", key: "E" },
         ],
       },
-      {
-        num: 7,
-        question: "Are you the final decision-maker? *",
-        field: "decision_maker",
-        options: [
-          { label: "Yes", key: "A" },
-          { label: "Involved in the decision", key: "B" },
-          { label: "Researching for someone else", key: "C" },
-        ],
-      },
-      {
-        num: 8,
-        question: "Do you have reference images or designs? *",
-        field: "has_references",
-        options: [
-          { label: "Yes, I have references", key: "A" },
-          { label: "No, starting from scratch", key: "B" },
-          { label: "I want help deciding", key: "C" },
-        ],
-      },
     ],
   },
   firstoptionagency: {
@@ -111,7 +79,7 @@ export const CAMPAIGNS: Record<string, CampaignConfig> = {
     subtitle: "Let's Understand Your Business Before We Grow It",
     questions: [
       {
-        num: 2,
+        num: 1,
         question: "What industry are you in? *",
         field: "industry",
         options: [
@@ -123,7 +91,7 @@ export const CAMPAIGNS: Record<string, CampaignConfig> = {
         ],
       },
       {
-        num: 3,
+        num: 2,
         question: "What is your role in the business? *",
         field: "role",
         options: [
@@ -134,7 +102,7 @@ export const CAMPAIGNS: Record<string, CampaignConfig> = {
         ],
       },
       {
-        num: 4,
+        num: 3,
         question: "What is your current monthly revenue? *",
         field: "revenue",
         options: [
@@ -146,7 +114,7 @@ export const CAMPAIGNS: Record<string, CampaignConfig> = {
         ],
       },
       {
-        num: 5,
+        num: 4,
         question: "Are you ready to invest in a proper marketing system if it makes financial sense? *",
         field: "investmentReady",
         options: [
